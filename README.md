@@ -34,7 +34,7 @@ extension RSA.PrivateKey {
     func jwt(signing claims: some JSONEncodable) throws -> String {
         let header: JSON.WebTokenHeader = .init(alg: .rs256)
         return try header.sign(encoding: claims) {
-            try self.sign(hashing: $0, padding: .pkcs1_legacy, algorithm: .sha256)
+            try self.sign(hashing: $0[...], padding: .pkcs1_legacy, algorithm: .sha256)
         }
     }
 }
