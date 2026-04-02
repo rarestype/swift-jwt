@@ -23,7 +23,7 @@ The swift-jwt library requires Swift 6.2 or later.
 
 ## Getting started
 
-You can use swift-jwt with any cryptography library you like! One such library is [swift-cryptography](https://github.com/rarestype/swift-cryptography). If you do choose to use swift-cryptography, here’s how you would sign `some JSONEncodable` payload, using that library’s `RSA.PrivateKey` type:
+You can use swift-jwt with any cryptography library you like! One such library is [swift-cryptography](https://github.com/rarestype/swift-cryptography). If you do choose to use swift-cryptography, here’s how you would sign `some JSONEncodable` payload, using that library’s [`RSA.PrivateKey`](https://swiftinit.org/docs/swift-cryptography/cryptography/rsa/privatekey) type:
 
 ```swift
 import Cryptography
