@@ -4,7 +4,7 @@ import CompilerPluginSupport
 
 let package: Package = .init(
     name: "swift-jwt",
-    platforms: [.macOS(.v14), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)],
+    platforms: [.macOS(.v15), .iOS(.v18), .tvOS(.v18), .watchOS(.v11), .visionOS(.v2)],
     products: [
         .library(name: "JWT", targets: ["JWT"]),
     ],
