@@ -28,6 +28,7 @@ You can use swift-jwt with any cryptography library you like! One such library i
 ```swift
 import Cryptography
 import JSON
+import JWT
 
 extension RSA.PrivateKey {
     func jwt(signing claims: some JSONEncodable) throws -> String {
